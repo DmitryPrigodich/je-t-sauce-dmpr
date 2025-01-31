@@ -25,7 +25,7 @@ namespace PlaywrightTests.Tests
             // GET THROUGH LOGIN PAGE
             var loginPage = new LoginPage(page);
             await loginPage.GotoSaucePage();
-            await loginPage.LoginAsStandardUserENV();
+            await loginPage.LoginAsStandardUser();
             Assert.Contains("inventory.html", page.Url);
 
             // GET THROUGH PRODUCTS PAGE

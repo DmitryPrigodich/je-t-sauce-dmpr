@@ -39,5 +39,5 @@ jobs:
       - name: Run tests
         run: dotnet test --no-build
         env:
-          SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
+          SAUCE_USERNAME: ${{ secrets.SAUCE_USER_STANDARD }}
           SAUCE_PASSWORD: ${{ secrets.SAUCE_PASSWORD }}

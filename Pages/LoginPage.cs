@@ -27,12 +27,7 @@ namespace PlaywrightTests.Pages
 
         public async Task LoginAsStandardUser()
         {
-            await LoginAs(Constants.USER_STANDARD, Constants.PASSWORD);
-        }
-
-        public async Task LoginAsStandardUserENV()
-        {
-            var username = Environment.GetEnvironmentVariable("SAUCE_USERNAME");
+            var username = Environment.GetEnvironmentVariable("SAUCE_USER_STANDARD");
             var password = Environment.GetEnvironmentVariable("SAUCE_PASSWORD");
             await LoginAs(username, password);
         }
